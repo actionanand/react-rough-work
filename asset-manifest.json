@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/redux-saga-rough-work/static/css/main.8e663735.chunk.css",
+    "main.js": "/redux-saga-rough-work/static/js/main.cc0791ed.chunk.js",
+    "main.js.map": "/redux-saga-rough-work/static/js/main.cc0791ed.chunk.js.map",
+    "runtime~main.js": "/redux-saga-rough-work/static/js/runtime~main.e5947820.js",
+    "runtime~main.js.map": "/redux-saga-rough-work/static/js/runtime~main.e5947820.js.map",
+    "static/js/2.3c8a0311.chunk.js": "/redux-saga-rough-work/static/js/2.3c8a0311.chunk.js",
+    "static/js/2.3c8a0311.chunk.js.map": "/redux-saga-rough-work/static/js/2.3c8a0311.chunk.js.map",
+    "index.html": "/redux-saga-rough-work/index.html",
+    "precache-manifest.a09c6b9c9d3d4837d5b751fc2b51e929.js": "/redux-saga-rough-work/precache-manifest.a09c6b9c9d3d4837d5b751fc2b51e929.js",
+    "service-worker.js": "/redux-saga-rough-work/service-worker.js",
+    "static/css/main.8e663735.chunk.css.map": "/redux-saga-rough-work/static/css/main.8e663735.chunk.css.map"
+  }
+}
