@@ -16,8 +16,10 @@ In your terminal after you clone your project down, remember to run either `yarn
 
 1. [Generator Function *](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function* "Generator Function - MDN")
 1. [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html "Introducing Hooks")
-1. [Using the State Hook](https://reactjs.org/docs/hooks-state.html "Using the State Hook")
+1. [The useState Hook](https://reactjs.org/docs/hooks-state.html "Using the State Hook")
 1. [Why Did React Add Hooks?](https://reactjs.org/docs/hooks-intro.html#motivation "Why Did React Add Hooks?")
+1. [The useEffect Hook](https://reactjs.org/docs/hooks-effect.html "Using the Effect Hook")
+1. [JSON Placeholder](https://jsonplaceholder.typicode.com/ "JSON Placeholder")
 
 ## NPM Packages
 

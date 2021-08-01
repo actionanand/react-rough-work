@@ -4,7 +4,7 @@ import Card from '../card/card.component';
 
 const UseEffectExample = () => {
   const [user, setUser] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState('Bret');
 
   useEffect(() => {
     if (searchQuery.length > 0) {
@@ -22,6 +22,7 @@ const UseEffectExample = () => {
 
   return (
     <Card>
+      <h2 className="react-feature-header">Use Effect Example</h2>
       <input
         type='search'
         value={searchQuery}
@@ -29,12 +30,12 @@ const UseEffectExample = () => {
       />
       {user ? (
         <div>
-          <h3>{user.name}</h3>
-          <h3> {user.username} </h3>
-          <h3> {user.email} </h3>
+          <h3> Name: {user.name} </h3>
+          <h3> Username:  {user.username} </h3>
+          <h3> Email: {user.email} </h3>
         </div>
       ) : (
-        <p>No user found</p>
+        <p> No user found {searchQuery ? 'by' : ''} {searchQuery} </p>
       )}
     </Card>
   );
