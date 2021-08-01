@@ -20,6 +20,11 @@ In your terminal after you clone your project down, remember to run either `yarn
 1. [Why Did React Add Hooks?](https://reactjs.org/docs/hooks-intro.html#motivation "Why Did React Add Hooks?")
 1. [The useEffect Hook](https://reactjs.org/docs/hooks-effect.html "Using the Effect Hook")
 1. [JSON Placeholder](https://jsonplaceholder.typicode.com/ "JSON Placeholder")
+1. [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html "Rules of Hooks")
+1. [useReducer Hook](https://reactjs.org/docs/hooks-reference.html#usereducer "useReducer Hook")
+1. [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/ "A Complete Guide to useEffect")
+1. [React-Redux Hooks](https://react-redux.js.org/api/hooks "React-Redux Hooks")
+1. [React-Router Hooks](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/hooks.md "React-Router Hooks")
 
 ## NPM Packages
 
