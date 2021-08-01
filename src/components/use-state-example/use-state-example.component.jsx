@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import Card from '../card/card.component';
 
 const UseStateExample = () => {
-  const [name, setName] = useState('Yihua');
-  const [address, setAddress] = useState('Amsterdam');
+  const [name, setName] = useState('My Name');
+  const [address, setAddress] = useState('My Address');
 
   return (
     <Card>
       <h1> {name} </h1>
       <h1> {address} </h1>
-      <button onClick={() => setName('Andrei')}>Set Name to Andrei</button>
-      <button onClick={() => setAddress('Canada')}>Set Address</button>
+      <button onClick={() => setName('Anand')}>Set Name to Anand</button>
+      <button onClick={() => setAddress('India')}>Set Address</button>
     </Card>
   );
 };
@@ -21,8 +21,8 @@ export class StateClassComponent extends React.Component {
     super();
 
     this.state = {
-      name: 'Yihua',
-      address: 'Canada'
+      name: 'My Name',
+      address: 'India'
     };
   }
 
@@ -30,10 +30,10 @@ export class StateClassComponent extends React.Component {
     return (
       <Card>
         <h1> {this.state.name} </h1>
-        <button onClick={this.setState({ name: 'Andrei' })}>
-          Set Name to Andrei
+        <button onClick={this.setState({ name: 'Anand' })}>
+          Set Name to Anand
         </button>
-        <button onClick={this.setState({ address: 'Amsterdam' })}>
+        <button onClick={this.setState({ address: 'My Address' })}>
           Set Address
         </button>
       </Card>
