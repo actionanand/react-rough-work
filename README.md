@@ -20,4 +20,4 @@ In your terminal after you clone your project down, remember to run either `yarn
 
 ## NPM Packages
 
-1. [Redux Saga](https://www.npmjs.com/package/redux-saga "redux-saga npm package")
+1. [Redux Saga - npm](https://www.npmjs.com/package/redux-saga "redux-saga npm package")
