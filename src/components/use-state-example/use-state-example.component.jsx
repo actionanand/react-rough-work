@@ -30,6 +30,7 @@ export class StateClassComponent extends React.Component {
   render() {
     return (
       <Card>
+        <h2 className="react-feature-header">Normal State Example</h2>
         <h2> {this.state.name} </h2>
         <button onClick={this.setState({ name: 'Anand' })}>
           Set Name to Anand
