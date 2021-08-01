@@ -23,3 +23,7 @@
   margin: 10px 0;
   padding: 10px;
 }
+
+.card > .react-feature-header {
+  color: white;
+}

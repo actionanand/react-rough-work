@@ -5,6 +5,7 @@ import Card from '../card/card.component';
 
 const SagasExample = ({ increment, decrement, value }) => (
   <Card>
+  <h2 className="react-feature-header">Saga Example</h2>
     {value}
     <button onClick={increment}>Add 1</button>
     <button onClick={decrement}>Minus 1</button>

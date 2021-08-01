@@ -8,8 +8,9 @@ const UseStateExample = () => {
 
   return (
     <Card>
-      <h1> {name} </h1>
-      <h1> {address} </h1>
+      <h2 className="react-feature-header">Use State Example</h2>
+      <h2> {name} </h2>
+      <h2> {address} </h2>
       <button onClick={() => setName('Anand')}>Set Name to Anand</button>
       <button onClick={() => setAddress('India')}>Set Address</button>
     </Card>
@@ -29,7 +30,7 @@ export class StateClassComponent extends React.Component {
   render() {
     return (
       <Card>
-        <h1> {this.state.name} </h1>
+        <h2> {this.state.name} </h2>
         <button onClick={this.setState({ name: 'Anand' })}>
           Set Name to Anand
         </button>
