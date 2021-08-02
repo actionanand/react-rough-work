@@ -1,10 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useReducer } from 'react';
 
 import Card from '../card/card.component';
 
+const INITIAL_STATE = {
+  user: null,
+  searchQuery: 'Antonette'
+};
+
+const reducer = (state, action) => {
+  switch(action.type) {
+    case 'SET_STATE':
+      return {
+        ...state,
+        user: action.payload
+      };
+    case 'SET_SEARCH_QUERY':
+      return {
+        ...state,
+        searchQuery: action.payload
+      };
+    default:
+      return state;
+  }
+};
+
+const setUser = user => ({
+  type: 'SET_STATE',
+  payload: user
+});
+
+const setSearchQuery = queryString => ({
+  type: 'SET_SEARCH_QUERY',
+  payload: queryString
+});
+
 const UseReducerExample = () => {
-  const [user, setUser] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+  const { user, searchQuery } = state;
 
   useEffect(() => {
     if (searchQuery.length > 0) {
@@ -13,7 +45,7 @@ const UseReducerExample = () => {
           `https://jsonplaceholder.typicode.com/users?username=${searchQuery}`
         );
         const resJson = await response.json();
-        setUser(resJson[0]);
+        dispatch(setUser(resJson[0]));
       };
 
       fetchFunc();
@@ -22,10 +54,11 @@ const UseReducerExample = () => {
 
   return (
     <Card>
+       <h2 className="react-feature-header">UseReducer Example</h2>
       <input
         type='search'
-        value={searchQuery}
-        onChange={event => setSearchQuery(event.target.value)}
+        value={ searchQuery }
+        onChange={ event => dispatch(setSearchQuery(event.target.value)) }
       />
       {user ? (
         <div>
@@ -34,7 +67,7 @@ const UseReducerExample = () => {
           <h3> {user.email} </h3>
         </div>
       ) : (
-        <p>No user found</p>
+        <p>No user found {searchQuery.length > 0 ? 'by' : ''} {searchQuery} </p>
       )}
     </Card>
   );
