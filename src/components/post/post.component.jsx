@@ -11,6 +11,7 @@ const Post = ({ postId }) => {
 
   return (
     <Card>
+      <h2 className="react-feature-header">Custom Hooks - Post</h2>
       {post ? (
         <div>
           <h3> {post.title} </h3>

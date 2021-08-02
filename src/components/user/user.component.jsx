@@ -11,6 +11,7 @@ const User = ({ userId }) => {
 
   return (
     <Card>
+      <h2 className="react-feature-header">Custom Hooks - User</h2>
       {user ? (
         <div>
           <h3>{user.username}</h3>

@@ -12,6 +12,10 @@
   font-size: 20px;
 }
 
+.card:last-child {
+  margin-bottom: 25px;
+}
+
 .card > button {
   background-color: white;
   border: 1px solid black;
